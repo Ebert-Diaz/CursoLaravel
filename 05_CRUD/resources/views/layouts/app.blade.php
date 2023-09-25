@@ -7,6 +7,8 @@
 	<title>Document</title>
 </head>
 <body>
+	{{-- FlasMessage --}}
+	@include('layouts._partials.messages')  
 	@yield('content')
 </body>
 </html>

@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+
 <a href="{{ route('note.index') }}">Back</a>
 
 <form method="POST" action="{{ route('note.store') }}" >
@@ -14,7 +15,7 @@
 	<label >Description</label>
 	<input name="description" type="text" /> <br/>
 	@error('description')
-	<p style="color:red;">{{ $message }}</p>
+		<p style="color:red;">{{ $message }}</p>
 	@enderror
 	<input type="submit" value="Create" /> 
 </form>
